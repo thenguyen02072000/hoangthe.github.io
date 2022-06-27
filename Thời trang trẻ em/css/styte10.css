@@ -1,0 +1,554 @@
+
+#fixNav{
+  width: 100%;
+  height: 35px;
+  background-color: whitesmoke;
+  display: block;
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.5); /*Ð? bóng cho menu*/
+  left: 0; /*N?m sát bên trái*/
+  z-index: 100000; /*Hi?n th? l?p trên cùng*/	
+
+}
+#fixNav ul{
+  padding :0;
+  margin: 0;
+}
+#fixNav ul li{
+  list-style:none inside;
+  width: auto;
+  float: left;
+  line-height: 35px; /*Cho text canh gi?a menu*/
+  color:black;
+  padding: 0;
+  margin-right:10px;
+  position: relative;
+}
+#fixNav ul li a{
+  white-space: nowrap; /*Cho ch? trong menu không b? wrap*/
+  padding: 0 10px;
+  color: #444;
+  font-size: 1,6em;
+  text-decoration: none;
+}
+/*CSS Style cho Submenu*/
+#fixNav ul li ul {
+  position: absolute;
+  width: auto;
+  display: none;
+  background-color:rgb(245, 57, 157) ;
+  border-bottom: 1px solid deeppink;
+  padding-left: 5px;
+  color: #ddd;
+}
+
+#fixNav ul li ul li{
+  display: block;
+  padding:0;
+  margin: 0;
+  float: none; /*B? float cho li c?p th? 2*/
+}
+/* Hover cho submenu */
+#fixNav ul li:hover {
+  /* Hover thì li s? d?i màu*/
+  background-color: #ee147a;
+  color: #ddd;
+}
+#fixNav ul li:hover ul{
+  /*Display ra submenu*/
+  display: block;
+  color: #e4e4e4;
+}
+.center {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.right {
+  float: right;
+  width: 42%;
+  border: opx solid #FFF;
+  padding: 10px;
+  margin-left: 5px;
+  background-color: #FFF;
+}
+.right h5{
+    margin-top: 20px;
+    font-size: 110%;
+}
+.left {
+    float: left;
+  width: 55%;
+  border: opx solid #FFF;
+background-color: #FFF;
+}
+.table p {
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.size{
+    margin-top: 15px;
+    padding: 10px;
+    border: 0px solid blanchedalmond;
+    background-color: cornsilk;
+}
+.dropbtn {
+  font-size: 13px;
+  border: none;
+  cursor: pointer;
+  margin-right: 3px;
+  margin-bottom: 10px;
+  margin-right: 3px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+#example {
+  border: 1px solid black;
+  padding: 35px;
+  background: url(img_);
+  background-repeat: no-repeat;
+}
+.note_checkout{
+    border: 1px solid ivory;
+    background-color: rgb(248, 166, 207);
+    padding: 15px;
+    margin-top: 20px;
+}
+table.attribute {
+color: rgba(0,0,0,7);
+font-family: -apple-system,Helvetica Neue,Helvetica,Roboto,Droid Sans,Arial,sans-serif;
+font-weight: 400;
+font-size: 12px;
+
+}
+.table {
+width: 100%;
+margin-bottom: 20px;
+max-width: 100%;
+background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.htabs {
+margin-bottom: -20px;
+background-color: #EEE;
+}
+.htabs a.selected {
+background-color: #F5447B;
+color:white;
+}
+.htabs a {
+padding: 10px;
+display: inline-block;
+}
+a {
+color: seashell;
+text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    text-decoration-color: currentcolor;
+}
+.window {
+
+margin: 20px 0;
+    margin-top: 20px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+background-color: white;
+padding: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+.tab-content {
+
+overflow: auto;
+    overflow-x: auto;
+    overflow-y: auto;
+    background-color: white;
+
+}
+.subtitle, h2 {
+
+font-size: 20px;
+width: 100%;
+text-align: left;
+font-weight: 700;
+margin: 10px 0 20px 0;
+    margin-top: 10px;
+}
+.table th, .table td {
+
+padding: 8px;
+    padding-top: 8px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+line-height: 20px;
+text-align: left;
+vertical-align: top;
+border-top: 1px solid #ddd;
+
+border-top-color: rgb(221, 221, 221);
+    border-top-style: solid;
+    border-top-width: 1px;
+
+}
+table.attribute {
+color:rgba(0,0,0,.87);
+font-family: -apple-system,Helvetica Neue,Helvetica,Roboto,Droid Sans,Arial,sans-serif;
+font-weight: 400;
+font-size: 12px;
+}
+img {
+max-width: 100%;
+height: auto;
+vertical-align: middle;
+border: 0;
+    border-top-color: currentcolor;
+    border-top-style: none;
+    border-top-width: 0px;
+    border-right-color: currentcolor;
+    border-right-style: none;
+    border-right-width: 0px;
+    border-bottom-color: currentcolor;
+    border-bottom-style: none;
+    border-bottom-width: 0px;
+    border-left-color: currentcolor;
+    border-left-style: none;
+    border-left-width: 0px;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+}
+.descipon_image {
+
+border: 1px solid #e4e4e4;
+border-top-color: rgb(228, 228, 228);
+border-top-style: solid;
+border-top-width: 1px;
+border-right-color:rgb(228, 228, 228);
+border-right-style: solid;
+border-right-width: 1px;
+border-bottom-color:rgb(228, 228, 228);
+border-bottom-style: solid;
+border-bottom-width: 1px;
+border-left-color:rgb(228, 228, 228);
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+border-radius: 10px;
+padding: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+width: 600px;
+margin: 0 auto 30px auto;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-left: auto;
+
+}
+div.table_att tr {
+				display: none;
+			}
+div.table_att tr.header {
+				display: table-row;
+			}
+.prodcart {
+margin: 0 0 0 0;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+.wty_cart {
+margin: 10px 0 0 0;
+    margin-top: 10px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+padding-left: 10px;
+}
+select {
+border: 1px solid #ccc;
+
+border-top-color:rgb(204, 204, 204);
+border-top-style: solid;
+border-top-width: 1px;
+border-right-color:rgb(204, 204, 204);
+border-right-style: solid;
+border-right-width: 1px;
+border-bottom-color:rgb(204, 204, 204);
+border-bottom-style: solid;
+border-bottom-width: 1px;
+border-left-color:rgb(204, 204, 204);
+border-left-style: solid;
+border-left-width: 1px;
+border-image-outset: 0;
+border-image-repeat: stretch;
+border-image-slice: 100%;
+border-image-source: none;
+border-image-width: 1;
+
+background-color:#fff;
+}
+select, input[type="file"] {
+line-height: 30px;
+
+}
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+
+display: inline-block;
+padding: 4px 6px;
+    padding-top: 4px;
+    padding-right: 6px;
+    padding-bottom: 4px;
+    padding-left: 6px;
+margin-bottom: 9px;
+font-size: 14px;
+color: #555;
+border-radius: 0;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+
+}
+input, button, select, textarea {
+
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+
+}
+label, input, button, select, textarea {
+    font-weight: 400;
+}
+button, input, select, textarea {
+
+margin: 0;
+vertical-align: middle;
+
+}
+input[type="button"].addtocart {
+
+background: url("https://www.bexinhshop.vn/catalog/view/theme/pinshop/stylesheet/cart.png") no-repeat;
+background-repeat: no-repeat;
+background-attachment: scroll;
+background-image: url("https://www.bexinhshop.vn/catalog/view/theme/pinshop/stylesheet/cart.png");
+background-origin: padding-box;
+background-clip: border-box;
+border: 1px#c70410 solid;
+border-top-color: rgb(199, 4, 16);
+border-top-style: solid;
+border-top-width: 1px;
+border-right-color:rgb(199, 4, 16);
+border-right-style: solid;
+border-right-width: 1px;
+border-bottom-color:rgb(199, 4, 16);
+border-bottom-style: solid;
+border-bottom-width: 1px;
+border-left-color:rgb(199, 4, 16);
+border-left-style: solid;
+border-left-width: 1px;
+border-image-outset: 0;
+border-image-repeat: stretch;
+border-image-slice: 100%;
+border-image-source: none;
+border-image-width: 1;
+border-radius: 3px;
+
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+
+padding: 13px 10px 10px 35px;
+
+    padding-top: 13px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 35px;
+    color:#FFF;
+font-weight: bold;
+display: inline-block;
+
+background-color:
+#e5101d;
+
+position: relative;
+
+background-size: 30px 30px;
+
+background-position: 2px 5px;
+
+    background-position-x: 2px;
+    background-position-y: 5px;
+}
+input[type="button"].addtocart {
+
+width: 100%;
+text-transform: uppercase;
+font-size: 18px !important;
+
+}
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+
+cursor: pointer;
+-webkit-appearance: button;
+    -moz-appearance: button;
+}
+input, button, select, textarea {
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+label, input, button, select, textarea {
+line-height: 20px;
+}
+button, input, select, textarea {
+vertical-align: middle;
+}
+.m_pdetails_price_bar {
+display: none;
+}
+.box_attr {
+margin-top: 20px;
+}
+.iconsca {
+font-size: 18px;
+position: relative;
+top: 5px;
+}
+a.wisl_deatails {
+    padding: 5px 25px;
+        padding-top: 5px;
+        padding-right: 25px;
+        padding-bottom: 5px;
+        padding-left: 25px;
+    left: 10px;
+    top: 10px;
+    z-index: 9999;
+    cursor: pointer;
+}
+.call_now {
+display: none;
+}
+.wisl_deatails {
+    border: none !important;
+    border-top-color: currentcolor;
+    border-top-style: none;
+    border-top-width: medium;
+    border-right-color: currentcolor;
+    border-right-style: none;
+    border-right-width: medium;
+    border-bottom-color: currentcolor;
+    border-bottom-style: none;
+    border-bottom-width: medium;
+    border-left-color: currentcolor;
+    border-left-style: none;
+    border-left-width: medium;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+    background: url(https://www.bexinhshop.vn/catalog/view/theme/pinshop/stylesheet/love.png) no-repeat !important;
+    background-color: rgba(0, 0, 0, 0);
+    background-repeat: no-repeat;
+background-attachment: scroll;
+background-image: url("https://www.bexinhshop.vn/catalog/view/theme/pinshop/stylesheet/love.png");
+background-size: auto;
+background-origin: padding-box;
+background-clip: border-box;
+background-position: 5px 3px !important;
+
+    background-position-x: 5px;
+    background-position-y: 3px;
+
+border-radius: 0 !important;
+
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+
+box-shadow: none !important;
+
+font-weight: normal !important;
+
+font-family: Arial, Helvetica, sans-serif;
+
+text-decoration: underline;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: currentcolor;
+font-size: 11px !important;
+color:gray;
+}
+.container_full{
+    background: url(https://www.bexinhshop.vn/catalog/view/theme/pinshop/images/back-22.png) repeat;
+
+    background-color: rgba(0, 0, 0, 0);
+        background-position-x: 0%;
+        background-position-y: 0%;
+        background-repeat: repeat;
+        background-attachment: scroll;
+        background-image: url("https://www.bexinhshop.vn/catalog/view/theme/pinshop/images/back-22.png");
+        background-size: auto;
+        background-origin: padding-box;
+        background-clip: border-box;
+
+}
+.container_top{
+background-color: whitesmoke;
+        }
+    .container_bottom{
+        padding-left: 30px;
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+    a.Chk {
+
+display: inline;
+padding: 5px 25px 1px 18px !important;
+color: #333 !important;
+background: url("https://www.bexinhshop.vn/catalog/view/theme/pinshop/stylesheet/check_ico.1.0.png") 0 5px no-repeat;
+font-weight: normal;
+
+}
+ul.size_filter li {
+
+display: inline;
+margin-right: 0px;
+
+}
+li.box_weight {
+    box-shadow: 0 1px 2px rgba(0,0,0,.2);
+background-color:#F5447B;
+color:white;
+padding: 5px;
+border-radius: 5px;
+}
+.tooltips {
+position: relative;
+}
+li {
+line-height: 20px;
+}
+@media (max-width: 470px){
+  input[type="button"].m_pdetails_addtocart{
+    width: 62%;
+    float: right;
+    border-radius: 0px;
+    background-image: none;
+}
+}
